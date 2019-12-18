@@ -79,3 +79,7 @@ plt.gcf().autofmt_xdate()
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+# https://codeforces.com/problemset/problem/919/B
+# https://codeforces.com/problemset/problem/1213/B
