@@ -79,11 +79,3 @@ plt.gcf().autofmt_xdate()
 plt.legend()
 plt.tight_layout()
 plt.show()
-
-
-# https://www.sanfoundry.com/python-program-find-sum-digits-number/
-# dim https://codeforces.com/contest/919/submission/67049990
-# acceptable - https://codeforces.com/contest/919/submission/67057340
-# perfect - https://codeforces.com/contest/919/submission/67502814
-# https://codeforces.com/problemset/problem/919/B
-# https://codeforces.com/problemset/problem/1213/B
