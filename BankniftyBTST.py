@@ -57,6 +57,7 @@ win_loss = np.around(abs(gain_mean/loss_mean), decimals=2)
 print('Win/Loss:\n\t', win_loss)
 
 max_gain = np.around((np.nanmax(df['Payoff'].values)*100), decimals=2)
+# max_gain = np.around((df['Payoff'].max()*100), decimals=2)
 print('Max Gain:\n\t', max_gain, '%')
 
 max_loss = np.around((np.nanmin(df['Payoff'].values)*100), decimals=2)
