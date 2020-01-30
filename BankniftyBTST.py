@@ -80,3 +80,9 @@ plt.gcf().autofmt_xdate()
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+
+df.to_csv(line_terminator="\n")
+its a window issue, its adding "\r" which is  a carriage return meaning "Enter"
+line_terminator will help
