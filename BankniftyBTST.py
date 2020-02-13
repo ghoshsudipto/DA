@@ -82,5 +82,4 @@ plt.tight_layout()
 plt.show()
 
 
-
-df.to_csv(line_terminator="\n")
+https://www.alphavantage.co/documentation/
