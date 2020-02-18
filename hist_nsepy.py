@@ -46,3 +46,32 @@ for i in series:
     df_fut = get_history(symbol=scrip, start=date(2000, 1, 1), end=date(2020, 1, 20), futures=True, expiry_date=i)
     df_fut.to_csv(f'D:\homework\dataset\{scrip}.csv', mode='a', header=False)
 
+
+    
+    
+Sub format()
+
+Range("A1:Z5000").Find(what:="Open Interest").Offset(1).Select
+Range(Selection, Selection.End(xlDown)).Select
+Selection.Replace what:=",", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+
+
+Range("A1:Z5000").Find(what:="open Interest Int").Offset(1).Select
+ActiveCell.FormulaR1C1 = "=INT(RC[-3])"
+   ActiveCell.Offset(0, -1).Range("A1").Select
+    Selection.End(xlDown).Select
+    ActiveCell.Offset(0, 1).Range("A1").Select
+    Range(Selection, Selection.End(xlUp)).Select
+    Selection.FillDown
+    
+    
+    ActiveSheet.Calculate
+    
+    
+Range("A1:Z5000").Find(what:="open Interest Int").Offset(1).Select
+    
+    
+
+End Sub
