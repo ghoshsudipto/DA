@@ -5,7 +5,8 @@ plt.style.use('ggplot')
 pd.set_option('display.max_column', 500)
 pd.set_option('display.max_row', 50000)
 pd.set_option('display.width', 5000)
-
+forecast = "https://link.springer.com/article/10.1007/s12530-022-09481-x"
+intraday_commonality = 'https://academic.oup.com/jfec/advance-article/doi/10.1093/jjfinec/nbad005/7081291'
 slippage = 0.0005
 
 df = pd.read_csv(r'C:\Users\Sudipto\Dropbox\Python\DA\datasets\BN.csv')
